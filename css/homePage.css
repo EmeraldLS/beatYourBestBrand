@@ -101,6 +101,13 @@ body{
     font-size: 15px;
     border-radius: 50px;
 }
+
+@media (max-width:369px) {
+    .article_type{
+        flex: 1 1 100px;
+    }
+}
+
 .left_card.small_card
 {
     width: 100%;
