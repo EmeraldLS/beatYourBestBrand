@@ -102,9 +102,15 @@ body{
     border-radius: 50px;
 }
 
-@media (max-width:480px) {
+@media (max-width:369px) {
     .article_type{
         flex: 1 1 100px;
+    }
+}
+
+@media (max-width:481px) {
+    .article_type{
+        flex: 1 1 150px;
     }
 }
 
