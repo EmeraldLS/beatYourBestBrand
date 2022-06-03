@@ -305,8 +305,10 @@ footer{
 
 
 .email_2 {
-    background-color: transparent !important;
+    background-color: var(--bb-lighter-black) !important;
     margin-right: 10px;
+    border: none !important;
+    outline: none;
 }
 
 .email_2::placeholder {
@@ -326,4 +328,26 @@ footer{
     .copyright_content {
         justify-content: center !important;
     }
+}
+
+#formShow,
+#logoShow {
+    display: none !important;
+}
+
+
+
+@media (max-width:991px) {
+
+    #formShow,
+    #logoShow {
+        display: block !important;
+    }
+
+    #formHide,
+    #logoHide {
+        display: none;
+    }
+        
+
 }

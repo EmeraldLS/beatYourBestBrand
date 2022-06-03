@@ -39,7 +39,10 @@
         
             <div class="container">
                 <a class="navbar-brand mt-2 mt-lg-0" href="./index.html">
-                    Logo
+                    <div>
+                        <img src="./assets/logo/Union.png" alt="Beat Your Best Brand" height="40">
+                        <p class="text-left" style="font-family: 700;font-size: 13px;">FOR YOUR <span style="color:#ffcc4a">BRAND</span></p>
+                    </div>
                 </a>
                 <!-- Toggle button -->
                 <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
@@ -371,22 +374,34 @@
 </div>
 
 <!-- Footer -->
-<footer class="text-center text-lg-start  text-muted w-100 pt-3">
+<footer class="text-center  text-muted w-100 pt-3">
+    <div id="logoShow">
+        <a href="" style="position: relative;">
+            <img src="./assets/logo/Union.png" alt="" height="40">
+            <img src="./assets/logo/Union1.png" alt="" height="40" style="position: absolute;right:25px">
+        </a>
+    </div>
     <section class="">
         <div class="container text-center text-white text-md-start mt-5">
             <!-- Grid row -->
+            
             <div class="row mt-3">
                 <!-- Grid column -->
-                <div class="col-md-3 mb-4">
+                <div class="col mb-4" id="logoHide">
                     <!-- Content -->
-                    <h6 class=" fw-bold mb-4">
-
-                    </h6>
+                    <a class="navbar-brand mt-2" href="./index.html">
+                        <div style="position: relative;">
+                            <img src="./assets/logo/Union.png" alt="Beat Your Best Brand" height="40">
+                            <img src="./assets/logo/Union1.png" alt="" height="40" style="position: absolute;right:25px">
+                            <p class="text-left" style="font-family: 700;font-size: 13px;">FOR YOUR <span style="color:#ffcc4a">BRAND</span>
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-1  mb-4">
+                <div class="col  mb-4">
                     <!-- Links -->
                     <h6 class=" fw-bold mb-4">
                         Startseite
@@ -407,7 +422,7 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-1 mb-4">
+                <div class="col mb-4">
                     <!-- Links -->
                     <h6 class=" fw-bold mb-4">
                         Products
@@ -428,7 +443,7 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-1 mb-4">
+                <div class="col mb-4">
                     <!-- Links -->
                     <h6 class=" fw-bold mb-4">
                         Events
@@ -449,7 +464,7 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-1  mb-4">
+                <div class="col  mb-4">
                     <!-- Links -->
                     <h6 class=" fw-bold mb-4">
                         Company
@@ -470,7 +485,7 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
+                <div class="col-md-2 mb-4" id="formHide">
                     <!-- Links -->
                     <h6 class=" fw-bold mb-4">
                         Stay up to date on the best!
@@ -480,14 +495,31 @@
 
                     <form action="">
                         <label for="email" class="sr-only">Email Address</label>
-                        <div class="d-flex">
-                            <input type="email" class="form-control email_2 form-control-lg mb-2 mr-2" id="email"
-                                name="email" placeholder="Your Email">
+                        <div class="d-flex" style="flex-direction: column;">
+                            <input type="email" class="form-control email_2 form-control-lg mb-2 mr-2" id="email" name="email"
+                                placeholder="Your Email">
                             <button type="submit" id="subscribe_btn_2" class="btn mb-2 ">Subscribe</button>
                         </div>
                     </form>
                 </div>
                 <!-- Grid column -->
+            </div>
+            <div class="" id="formShow">
+                <!-- Links -->
+                <h6 class=" fw-bold mb-4">
+                    Stay up to date on the best!
+                </h6>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, voluptates.</p>
+                <p>
+            
+                <form action="">
+                    <label for="email" class="sr-only">Email Address</label>
+                    <div class="d-flex" style="flex-direction: column;">
+                        <input type="email" class="form-control email_2 form-control-lg mb-2 mr-2" id="email" name="email"
+                            placeholder="Your Email">
+                        <button type="submit" id="subscribe_btn_2" class="btn mb-2 ">Subscribe</button>
+                    </div>
+                </form>
             </div>
             <!-- Grid row -->
         </div>
@@ -510,6 +542,8 @@
     <!-- Copyright -->
 </footer>
 <!-- Footer -->
+
+
 
 
 <script src="./js/all.min.js"></script>

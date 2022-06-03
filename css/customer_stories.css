@@ -293,8 +293,10 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 
 
 .email_2 {
-    background-color: transparent !important;
+    background-color: var(--bb-lighter-black) !important;
     margin-right: 10px;
+    border: none !important;
+    outline: none;
 }
 
 .email_2::placeholder {
@@ -318,3 +320,27 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     }
 }
 
+
+#formShow,
+#logoShow {
+    display: none !important;
+}
+
+
+
+@media (max-width:991px) {
+
+    #formShow,
+    #logoShow {
+        display: block !important;
+    }
+
+    #formHide,
+    #logoHide {
+        display: none;
+    }
+        .collapse a {
+            color: var(--bb-black) !important;
+        }
+
+}

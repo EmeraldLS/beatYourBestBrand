@@ -247,7 +247,8 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 }
 
 .small_card{
-    height: 300px;
+    height: 100%;
+    min-height: 300px;
     margin: auto 10px;
     width: auto;
     border-radius: 10px;
@@ -312,10 +313,19 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 }
 
 
-
 .email_2 {
-    background-color: transparent !important;
+    background-color: var(--bb-lighter-black) !important;
     margin-right: 10px;
+    border: none !important;
+    outline: none;
+
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    
+
+    
 }
 
 .email_2::placeholder {
@@ -366,3 +376,23 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+
+#formShow, #logoShow{
+    display: none !important;
+}
+
+
+
+@media (max-width:991px) {
+    #formShow, #logoShow{
+        display: block !important;
+    }
+    #formHide, #logoHide
+    {
+        display: none;
+    }
+        
+
+}
+
