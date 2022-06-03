@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+* {
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    background: var(--bb-black);
+}
+
+:root {
+    --bb-black: #2b2b2b;
+    --bb-light-black: #3f3f3f;
+    --bb-lighter-black: #616161;
+    --bb-blue: #793aff;
+    --bb-pink: #ff5491;
+    --bb-yellow: #ffcc4a;
+    --bb-white: #f3f5fa;
+}
+
+.navbar {
+    box-shadow: none !important;
+    margin: 10px auto;
+}
+
+.navbar-nav {
+    background-color: var(--bb-lighter-black);
+    padding: 5px 50px;
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.social_icons a {
+    background-color: var(--bb-white);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+.hero_section {
+    height: 50vh;
+    background-image: url(../assets/images/3.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: var(--bb-white);
+    box-shadow: inset -10px -10px 20px var(--bb-black);
+}
+
+.hero_content {
+    position: absolute;
+    bottom: 40px;
+}
+
+@media (max-width:991px) {
+
+
+    .navbar-nav {
+        border-radius: 0;
+    }
+
+    .social_icons {
+        margin-top: 10px;
+    }
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--bb-white);
+}
+
+.card{
+    height: auto;
+    width: 100%;
+    margin: 10px auto;
+    background: var(--bb-lighter-black);
+    padding: 20px ;
+}
+
+.card_header{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    margin-right:  10px;
+}
+
+.myCustomCard
+{
+    height: 100%;
+    width: 100%;
+    margin: 10px auto;
+    background: var(--bb-lighter-black);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.news_letter_section {
+    background-color: var(--bb-blue);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.news_left {
+    color: #fff;
+}
+
+#email {
+    border: 0;
+    outline: 0;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--bb-white);
+}
+
+#email::placeholder {
+    color: var(--bb-black);
+}
+
+.news_left {
+    color: var(--bb-yellow);
+}
+
+.news_left h4 {
+    font-weight: bolder;
+    font-style: oblique;
+
+}
+
+#subscribe_btn {
+    background: var(--bb-white);
+    color: var(--bb-pink);
+    font-weight: bolder;
+}
+
+.pills{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.first, .last{
+    padding: 3px 15px;
+    background: var(--bb-lighter-black);
+    color: var(--bb-white) !important;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.box{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--bb-white) !important;
+    background: var(--bb-lighter-black);
+}
+
+.box_1{
+    background-color: var(--bb-pink) !important;
+}
+
+.fa-chevron-left, .fa-chevron-right
+{
+    color: var(--bb-pink);
+}
+
+footer{
+    background-color: var(--bb-lighter-black);
+}
+.subscribe_btn_2 {
+    width: auto;
+}
+
+
+.email_2 {
+    background-color: transparent !important;
+    margin-right: 10px;
+}
+
+.email_2::placeholder {
+
+    color: var(--bb-white) !important;
+    opacity: 0.5;
+}
+.text-reset {
+    font-size: 14px;
+}
+
+#subscribe_btn_2 {
+    background-color: var(--bb-white) !important;
+}
+
+@media (max-width:767px) {
+    .copyright_content {
+        justify-content: center !important;
+    }
+}

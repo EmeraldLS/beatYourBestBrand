@@ -102,7 +102,7 @@ body {
 
 .card
 {
-    height: 450px !important;
+    height: auto ;
     width: 300px;
     margin: 0;
     background: var(--bb-lighter-black);
@@ -198,4 +198,127 @@ body {
     background: var(--bb-white);
     color: var(--bb-pink);
     font-weight: bolder;
+}
+
+.get_quote_section
+{
+    height: auto;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--bb-pink);
+}
+
+.get_quote_content
+{
+    color: var(--bb-white);
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+#quote_btn
+{
+    background-color: var(--bb-white) ;
+    text-transform:none;
+    font-weight: bolder;
+    color: var(--bb-blue);
+}
+
+.quote_name, .quote_email, .quote_phone{
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.25 ease;
+    margin: 10px auto;
+}
+
+.quote_name::placeholder,
+.quote_email::placeholder,
+.quote_phone::placeholder
+{
+    color: var(--bb-white);
+}
+
+.quote_name:active,.quote_name:focus, .quote_email:active, .quote_email:focus, .quote_phone:active, .quote_phone:focus{
+    background: var(--bb-blue);
+}
+
+.input-group select {
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 10px auto;
+}
+
+.podcast_integration {
+    height: auto;
+    width: 100%;
+    background-color: var(--bb-light-black);
+    
+}
+
+.podcast_integration_content
+{
+    color: var(--bb-white);
+}
+
+.integration_forms
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: var(--bb-lighter-black);
+    border-radius: 50px;
+}
+
+.integration_forms button{
+    outline: none;
+    padding: 5px 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid var(--bb-white);
+    color: var(--bb-white);
+    font-weight: bolder;
+    margin: 10px auto;
+}
+
+.integration_forms button:first-child{
+    background-color: var(--bb-pink) !important;
+}
+
+.podcast_list li{
+    list-style-type:square;
+    margin: 10px auto;
+}
+
+.box
+{
+    height: 235px;
+    width: 350px;
+    background-color: var(--bb-yellow);
+    border-radius: 20px;
+}
+
+.email_2 {
+    background-color: transparent !important;
+    margin-right: 10px;
+}
+
+.email_2::placeholder {
+
+    color: var(--bb-white) !important;
+}
+
+#subscribe_btn_2 {
+    background-color: var(--bb-white) !important;
 }
