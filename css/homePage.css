@@ -689,8 +689,5 @@ p {
     #logoHide {
         display: none;
     }
-        .collapse a {
-            color: var(--bb-black) !important;
-        }
 
 }
