@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="./css/mdb.min.css">
     <link rel="stylesheet" href="./css/page2.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/custom-picker.css">
 </head>
 <body>
 
@@ -336,39 +337,43 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <div class="contact_content">
+                <div class="contact_content mt-5">
                     <h3 class="text-center">Interested?</h3>
                     <p class="mt-2 text-center">Just drop your contact info and we will get back <br> to you as soon as possible</p>
                     <form action="">
-                        <div class="form-group mb-2">
+                        <div class="form-group mb-3">
                             <label for="name" class="sr-only">Your Name</label>
                             <input type="text" class="form-control form-control-lg mt-2" id="name" name="name" placeholder="Your Name">
                         </div>
-                        <div class="form-group mb-2">
+                        <div class="form-group mb-3">
                             <label for="email" class="sr-only">Your Email</label>
                             <input type="email" class="form-control form-control-lg mt-2" id="email" name="email" placeholder="Your Email">
                         </div>
-                        <div class="form-group mb-2">
+                        <div class="form-group mb-3">
                             <label for="country" class="sr-only">Select your country</label>
                             <div class="input-group flex-nowrap">
-                                <select name="country" id="country" class=" ">
-                                    <option value="+234" selected>+234</option>
-                                    <option value="+1">+1</option>
-                                </select>
-                                <input type="text" class="form-control" placeholder="90909090900" name="phone_number" id="phone_number" />
+                                <div class="select">
+                                    <div class="selectBtn" data-type="firstOption"><i class="flag flag-germany"></i> +49</div>
+                                    <div class="selectDropdown">
+                                        <div class="option" data-type="firstOption"><i class="flag flag-germany"></i> +49</div>
+                                        <div class="option" data-type="secondOption"><i class="flag flag-switzerland"></i>+41</div>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="999999999" name="phone_number" id="phone_number" />
                             </div>
                         </div>
-                        <div class="form-group mb-2">
+                        <div class="form-group mb-3">
                             <label for="message" class="sr-only">Your Message</label>
                             <textarea type="text" cols="30" rows="3" class="form-control form-control-lg mt-2" id="message" name="message"
                                 placeholder="Your Message"></textarea>
                         </div>
-                        <button class="btn btn-block" id="sBtn" type="submit">Send</button>
+                        <button class="btn btn-block" id="sBtn" style="text-transform: none;" type="submit">Send</button>
                     </form>
 
                 </div>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-3">
+            </div>
         </div>
     </div>
 </div>
@@ -548,6 +553,7 @@
 
 <script src="./js/all.min.js"></script>
 <script src="./js/mdb.min.js"></script>
+<script src="./js/custom-picker.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.swiper', {
@@ -579,6 +585,7 @@
                 el: '.swiper-scrollbar',
             },
         });
+
 </script>
 </body>
 </html>
