@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./css/mdb.dark.min.css">
     <link rel="stylesheet" href="./css/mdb.min.css">
     <link rel="stylesheet" href="./css/jobs.css">
+    <link rel="stylesheet" href="./css/navbar-collapse.css">
 </head>
 <body>
     
@@ -43,20 +44,16 @@
                         <p class="text-left" style="font-family: 700;font-size: 13px;">FOR YOUR <span style="color:#ffcc4a">BRAND</span></p>
                     </div>
                 </a>
+
+
                 <!-- Toggle button -->
-                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <label for="check" class="toggler">
-                        <input type="checkbox" id="check" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
+                <button class="navbar-toggler " style="margin-top: -20px;" type="button">
+                    <i class="fas fa-bars fa-2x" style="color: #ff5491;"></i>
                 </button>
+                
         
                 <!-- Collapsible wrapper -->
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse justify-content-end">
                     <!-- Navbar brand -->
         
                     <!-- Left links -->
@@ -103,6 +100,42 @@
         <!-- Navbar -->
 
     </div>
+
+
+    <div class="navbar_md_screen">
+        <div class="content" id="myNavCollapsed">
+            <button class="closeNav"><i class="fas fa-times fa-2x" style="color: #ffcc4a;"></i></button>
+            <ul class="list_1">
+                <li class="nav-item">
+                    <a class="nav-link" href="./page2.html">Startseite</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./page3.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./customer_stories.html">Our Customer Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./event.html">Events</a>
+                </li>
+                <li class="nav-item " style="position: relative;">
+                    <a class="nav-link " style="position: absolute;left: -45px;color: #ffcc4a" href="./jobs.html">Jobs</a>
+                </li>
+            </ul>
+            <ul class="list_2">
+                <a href="https://facebook.com" class=" me-3">
+                    <i class="fab fa-facebook-f" style="font-size: 10px;"></i>
+                </a>
+                <a href="https://twitter.com/EmeraldLS" class=" me-3">
+                    <i class="fab fa-twitter" style="font-size: 10px;"></i>
+                </a>
+                <a href="https://instagram.com/EmeraldLS_" class=" me-3">
+                    <i class="fab fa-instagram" style="font-size: 10px;"></i>
+                </a>
+            </ul>
+        </div>
+    </div>
+
 <!-- Hero Section -->
 
 <div class="hero_section">
@@ -588,5 +621,6 @@
 
     <script src="./js/all.min.js"></script>
     <script src="./js/mdb.min.js"></script>
+    <script src="./js/navbarcollapse.js"></script>
 </body>
 </html>

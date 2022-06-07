@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="./css/mdb.min.css">
     <link rel="stylesheet" href="./css/event.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navbar-collapse.css">
 </head>
 <body>
     <div class="navbar_content">
@@ -44,15 +45,8 @@
                     </div>
                 </a>
                 <!-- Toggle button -->
-                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <label for="check">
-                        <input type="checkbox" id="check" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
+                <button class="navbar-toggler " style="margin-top: -20px;" type="button">
+                    <i class="fas fa-bars fa-2x" style="color: #ff5491;"></i>
                 </button>
     
                 <!-- Collapsible wrapper -->
@@ -103,6 +97,41 @@
         <!-- Navbar -->
     
     </div>
+
+
+    <div class="navbar_md_screen">
+        <div class="content" id="myNavCollapsed">
+            <button class="closeNav"><i class="fas fa-times fa-2x" style="color: #ffcc4a;"></i></button>
+            <ul class="list_1">
+                <li class="nav-item">
+                    <a class="nav-link" href="./page2.html" >Startseite</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./page3.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./customer_stories.html">Our Customer Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./event.html" style="color: #ffcc4a">Events</a>
+                </li>
+                <li class="nav-item " style="position: relative;">
+                    <a class="nav-link " style="position: absolute;left: -45px;" href="./jobs.html">Jobs</a>
+                </li>
+            </ul>
+            <ul class="list_2">
+                <a href="https://facebook.com" class=" me-3">
+                    <i class="fab fa-facebook-f" style="font-size: 10px;"></i>
+                </a>
+                <a href="https://twitter.com/EmeraldLS" class=" me-3">
+                    <i class="fab fa-twitter" style="font-size: 10px;"></i>
+                </a>
+                <a href="https://instagram.com/EmeraldLS_" class=" me-3">
+                    <i class="fab fa-instagram" style="font-size: 10px;"></i>
+                </a>
+            </ul>
+        </div>
+    </div>
     <!-- Hero Section -->
     
     <div class="hero_section">
@@ -127,7 +156,7 @@
                         </div>
                         <div class="event_content">
                             <div class="header">
-                                <span><i class="fas fa-moon " style="color: #793aff;"></i></span>
+                                <span><i class="fas fa-moon fa-rotate-by" style="color: #793aff;--fa-rotate-angle: -35deg;font-size:20px ;"></i></span>
                                 <h6 class="mt-2">Event Name Event Name</h6>
                             </div>
                             <div class="container">
@@ -149,7 +178,7 @@
                             </div>
                             <div class="event_footer">
                                 <div class="location"><i class="fas fa-map-marker"></i> DENVER, CO</div>
-                                <a href="" style="color:#793aff">Visit Event <i class="fas fa-arrow-right"></i></a>
+                                <a href="" style="color:#793aff">Visit Event <i class="fas fa-arrow-right" ></i></a>
                             </div>
                         </div>
                     </div>
@@ -162,7 +191,7 @@
                         </div>
                         <div class="event_content">
                             <div class="header">
-                                <span><i class="fas fa-moon " style="color: #ff5491;"></i></span>
+                                <span><i class="fas fa-moon fa-rotate-by " style="color: #ff5491;--fa-rotate-angle: -35deg;font-size:20px ;"></i></span>
                                 <h6 class="mt-2">Event Name Event Name</h6>
                             </div>
                             <div class="container">
@@ -198,7 +227,7 @@
                         </div>
                         <div class="event_content">
                             <div class="header">
-                                <span><i class="fas fa-moon " style="color: #ffcc4a;"></i></span>
+                                <span><i class="fas fa-moon fa-rotate-by" style="color: #ffcc4a;--fa-rotate-angle: -35deg;font-size:20px ;"></i></span>
                                 <h6 class="mt-2">Event Name Event Name</h6>
                             </div>
                             <div class="container">
@@ -234,7 +263,7 @@
                         </div>
                         <div class="event_content">
                             <div class="header">
-                                <span><i class="fas fa-moon " style="color: #793aff;"></i></span>
+                                <span><i class="fas fa-moon fa-rotate-by" style="color: #793aff;--fa-rotate-angle: -35deg;font-size:20px ;"></i></span>
                                 <h6 class="mt-2">Event Name Event Name</h6>
                             </div>
                             <div class="container">
@@ -270,7 +299,7 @@
                         </div>
                         <div class="event_content">
                             <div class="header">
-                                <span><i class="fas fa-moon " style="color: #ffcc4a;"></i></span>
+                                <span><i class="fas fa-moon fa-rotate-by " style="color: #ffcc4a;--fa-rotate-angle: -35deg;font-size:20px ;"></i></span>
                                 <h6 class="mt-2">Event Name Event Name</h6>
                             </div>
                             <div class="container">
@@ -529,6 +558,7 @@
     <script src="./js/all.min.js"></script>
     <script src="./js/mdb.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/navbarcollapse.js"></script>
 
     <script>
 
