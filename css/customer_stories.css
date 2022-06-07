@@ -168,12 +168,19 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     .navbar-nav {
         border-radius: 0;
     }
+    .collapse a {
+        color: var(--bb-white);
+    }
+
+    .navbar-nav,
+    .social_icons {
+        background-color: var(--bb-pink) !important;
+    }
 
     .social_icons {
         margin-top: 10px;
     }
     .social_icons {
-        background-color: var(--bb-black);
         justify-content: center;
         padding: 10px;
         border-radius: 10px;
@@ -227,11 +234,11 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 }
 
 .logo img {
-    height: 250px;
+    height: 100%;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    object-fit: cover;
+    object-fit: contain;
     margin-right: 10px;
 }
 
@@ -312,28 +319,17 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     border: none !important;
     outline: none;
 }
-
 .email_2::placeholder {
 
-    color: var(--bb-white) !important;
-    opacity: 0.5;
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-size: 13px;
 }
 
 #subscribe_btn_2 {
     background-color: var(--bb-white) !important;
+    width: 150px;
+    text-transform: none;
 }
-
-.text-reset{
-    font-size: 14px;
-}
-
-
-@media (max-width:767px) {
-    .copyright_content {
-        justify-content: center !important;
-    }
-}
-
 
 #formShow,
 #logoShow {
@@ -353,8 +349,45 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     #logoHide {
         display: none;
     }
-        .collapse a {
-            color: var(--bb-black) !important;
-        }
 
+}
+
+footer{
+    font-size: 13px;
+}
+
+footer .row {
+    justify-content: center;
+}
+
+footer .col-md-2 {
+    width: 100px;
+    padding: 15px;
+    margin: 5px 10px;
+}
+
+footer #logoHide {
+    width: 20%;
+}
+
+footer #formHide {
+    width: 30%;
+}
+
+@media (max-width:479px) {
+    footer .col-md-2 {
+        width: 30%;
+    }
+}
+
+@media (max-width:1199px) {
+    footer #logoHide {
+        width: 15%;
+    }
+}
+
+@media (max-width:767px) {
+    .certificate {
+        width: 100% !important;
+    }
 }

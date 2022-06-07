@@ -165,6 +165,7 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     .navbar-nav {
         border-radius: 0;
     }
+    
 
     .social_icons {
         margin-top: 10px;
@@ -423,14 +424,16 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     background-color: transparent !important;
     margin-right: 10px;
 }
-
 .email_2::placeholder {
 
-    color: var(--bb-white) !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-size: 13px;
 }
 
 #subscribe_btn_2 {
     background-color: var(--bb-white) !important;
+    width: 150px;
+    text-transform: none;
 }
 
 #formShow,
@@ -452,6 +455,44 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
         display: none;
     }
 
+}
+footer{
+    font-size: 13px;
+}
+footer .row {
+    justify-content: center;
+}
+
+footer .col-md-2 {
+    width: 100px;
+    padding: 15px;
+    margin: 5px 10px;
+}
+
+footer #logoHide {
+    width: 20%;
+}
+
+footer #formHide {
+    width: 30%;
+}
+
+@media (max-width:479px) {
+    footer .col-md-2 {
+        width: 30%;
+    }
+}
+
+@media (max-width:1199px) {
+    footer #logoHide {
+        width: 15%;
+    }
+}
+
+@media (max-width:767px) {
+    .certificate {
+        width: 100% !important;
+    }
 }
 
 .video_play_section
@@ -573,7 +614,12 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     .video_play_section{
         background-position: -350px 00px;
     }
-    .collapse a{
-        color: var(--bb-black) !important;
+    .collapse a {
+        color: var(--bb-white);
+    }
+
+    .navbar-nav,
+    .social_icons {
+        background-color: var(--bb-pink);
     }
 }
