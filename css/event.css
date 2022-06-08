@@ -38,17 +38,17 @@ label span {
 }
 
 
-span:nth-of-type(1) {
+label span:nth-of-type(1) {
     width: 40%;
 
 }
 
-span:nth-of-type(2) {
+label span:nth-of-type(2) {
     width: 80%;
 }
 
 
-span:nth-of-type(3) {
+label span:nth-of-type(3) {
     width: 55%;
 
 }
@@ -452,7 +452,7 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 }
 
 footer {
-    background-color: var(--bb-lighter-black);
+    background-color: var(--bb-light-black);
 }
 
 .subscribe_btn_2 {
@@ -572,4 +572,51 @@ a:not(.sidenav-link):not(.btn):not(.dropdown-item):not(.nav-link):not(.navbar-br
 .fas.fa-calendar{
     font-size: 10px !important;
     display: none !important;
+}
+
+@media (max-width:575.98px) {
+    footer {
+        display: none !important;
+    }
+
+    .footer-md_screen {
+        display: block !important;
+        font-family: var(--barlow);
+    }
+
+    .footer-md_screen .footer-md_screen_content {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .footer-md_screen .footer-md_screen_content div {}
+
+    .footer-md_screen .footer-md_screen_content ul li {
+        list-style: none;
+        font-size: 15px !important;
+    }
+
+    .footer-md_screen .footer-md_screen_content ul li a {
+        color: var(--bb-white) !important;
+        font-weight: bolder;
+    }
+
+    .socials a {
+        height: 40px;
+        width: 40px;
+        background-color: var(--bb-white);
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--bb-black) !important;
+        border-radius: 50%;
+    }
+
+}
+
+.footer-md_screen {
+    display: none;
 }

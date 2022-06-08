@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
-* {
-    font-family: 'Barlow', sans-serif;
-}
+
 
 body {
     background: var(--bb-black);
+    font-family: 'Barlow', sans-serif;
 }
 
 :root {
@@ -17,6 +16,8 @@ body {
     --bb-pink: #ff5491;
     --bb-yellow: #ffcc4a;
     --bb-white: #f3f5fa;
+    --barlow: 'Barlow', sans-serif;
+    --lora: 'Lora', sans-serif
 }
 
 label {
@@ -36,17 +37,17 @@ label span {
 }
 
 
-span:nth-of-type(1) {
+label span:nth-of-type(1) {
     width: 40%;
 
 }
 
-span:nth-of-type(2) {
+label span:nth-of-type(2) {
     width: 80%;
 }
 
 
-span:nth-of-type(3) {
+label span:nth-of-type(3) {
     width: 55%;
 
 }
@@ -408,9 +409,24 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 }
 
 .podcast_list li{
-    list-style-type:square;
+    list-style-type:none;
     margin: 10px auto;
+    font-size: 13px;
 }
+
+.podcast_list li span{
+    padding: 3px 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: var(--bb-pink);
+}
+
+.podcast_p {
+    font-family: var(--lora);
+    margin: 0 30px;
+}
+
+
 
 .box
 {
@@ -622,4 +638,50 @@ footer #formHide {
     .social_icons {
         background-color: var(--bb-pink);
     }
+}
+
+@media (max-width:575.98px) {
+    footer {
+        display: none !important;
+    }
+
+    .footer-md_screen {
+        display: block !important;
+    }
+
+    .footer-md_screen .footer-md_screen_content {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .footer-md_screen .footer-md_screen_content div {}
+
+    .footer-md_screen .footer-md_screen_content ul li {
+        list-style: none;
+        font-size: 15px !important;
+    }
+
+    .footer-md_screen .footer-md_screen_content ul li a {
+        color: var(--bb-white) !important;
+        font-weight: bolder;
+    }
+
+    .socials a {
+        height: 40px;
+        width: 40px;
+        background-color: var(--bb-white);
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--bb-black) !important;
+        border-radius: 50%;
+    }
+
+}
+
+.footer-md_screen {
+    display: none;
 }
