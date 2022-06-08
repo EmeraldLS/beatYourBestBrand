@@ -330,6 +330,30 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     margin: 10px auto;
 }
 
+@media (max-width:767px) {
+    .news_letter_section, .pills, #calendar{
+        display: none !important;
+    }
+    .prev_next{
+        display: flex !important;
+    }
+}
+
+.prev_next {
+    display: none;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.prev_next button {
+    border: none;
+    outline: none;
+    color: var(--bb-white);
+    background-color: var(--bb-light-black);
+    padding: 5px 40px;
+}
+
 .news_left {
     color: #fff;
 }
@@ -416,7 +440,6 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 
 .pills {
     margin: 50px auto;
-
     display: flex;
     justify-content: center;
     align-items: center;
