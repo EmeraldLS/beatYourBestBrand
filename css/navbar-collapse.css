@@ -79,6 +79,7 @@
         background-color: var(--bb-white);
         color: var(--bb-pink) !important;
         border-radius: 50%;
+        font-size: 10px;
     }
 
 
