@@ -135,7 +135,7 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 
 
 .hero_section {
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     background-image: url(../assets/images/2.jpg);
     background-position: center;
@@ -144,16 +144,19 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     background-repeat: no-repeat;
     position: relative;
     color: var(--bb-white);
-    position: relative;
+    overflow: hidden;
+    clip-path: circle(180vh at 50% -80vh);
 }
 
 
-.overlay{
+
+
+/* .overlay{
     position: absolute;
     height: 80vh;
     width: 100%;
     background-color: rgba(0,0,0, 0.4);
-}
+} */
 
 .hero_content {
     position: relative;
@@ -161,6 +164,7 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     position: absolute;
     bottom: 50px;
     padding: 0 25px;
+    z-index: 1;
 }
 .hero_content h6{
     font-size: 20px;
@@ -183,10 +187,15 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 }
 
 .sponsors{
+    position: relative;
     height: 60vh;
     width: 100%;
     background-color: var(--bb-blue);
     position: relative;
+    /* Clip path half circle */
+    clip-path: circle(120vh at 50% -40vh);
+    /* Clip path full circle */
+
 }
 
 .sponsors_logo{
@@ -328,6 +337,7 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 .podcast_notshown{
     position: relative;
     top: -100px;
+    
 }
 
 .cards{
