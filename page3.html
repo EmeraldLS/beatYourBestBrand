@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="./css/mdb.min.css">
     <link rel="stylesheet" href="./css/page3.css">
     <link rel="stylesheet" href="./css/navbar-collapse.css">
+    <link rel="stylesheet" href="./css/custom-picker.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 </head>
@@ -123,7 +124,7 @@
                 <i class="fab fa-linkedin-in"></i>
             </a>
             <a href="https://facebook.com" class=" me-5">
-                <i class="fab fa-facebook" ></i>
+                <i class="fab fa-facebook-f" ></i>
             </a>
             <a href="https://twitter.com/EmeraldLS" class=" me-5">
                 <i class="fab fa-twitter" ></i>
@@ -150,14 +151,26 @@
     </div>
 
     <div class="sponsors">
+        <div class="light-overlay"></div>
         <div class="container">
-
+            <div class="sponsors_logo">
+                <img src="./assets/logo/sponsor.png" alt="">
+                <img src="./assets/logo/sponsor2.png" alt="">
+                <img src="./assets/logo/sponsor3.png" alt="">
+                <img src="./assets/logo/sponsor5.png" alt="" >
+                <img src="./assets/logo/sponsor4.png" alt="">
+            </div>
+            <div class="sponsors_logo_2">
+                <img src="./assets/logo/sponsor5.png" alt="">
+                <img src="./assets/logo/sponsor.png" alt="">
+                <img src="./assets/logo/sponsor4.png" alt="">
+            </div>
         </div>
     </div>
 
 
     <!-- latest podcasts -->
-    <div class="container my-5">
+    <div class="container my-5 latest_podcast" >
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
@@ -261,7 +274,7 @@
     </div>
 
     <div class="container">
-        <div class="podcast notshown">
+        <div class="podcast_notshown notshown">
             <div class="row">
                 <div class="col-md-6">
                     <div class="cards">
@@ -407,6 +420,10 @@
     <div class="container">
         <div class="video_play">
             <div class="row">
+                <div class="col-md-6 hidden">
+                    <h2 class="text-center">Video</h2>
+                    <img src="./assets/logo/Group.png" alt="" class="rectangle">
+                </div>
                 <div class="col-md-6">
                     
                     <div class="row">
@@ -414,7 +431,7 @@
                         <div class="col-md-10">
                             <div class="video_play_content mt-5">
                                 <div class="video_play_write_up">
-                                    <h3 class="mb-5">Video</h3>
+                                    <h3 class="mb-5 shown">Video</h3>
                                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. In cupiditate adipisci praesentium aliquid atque, saepe quam quo rerum ea ducimus ullam, quibusdam at quos hic minima consequatur molestiae. Dolores, odio.</p>
                                     <a href="#" >Try it <span class="ml-4"><i class="fas fa-arrow-right"></i></span> </a>
                                 </div>
@@ -423,7 +440,7 @@
                         <div class="col-md-1"></div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 shown">
                     <img src="./assets/logo/Group.png" alt="" class="rectangle">
                 </div>
             </div>
@@ -437,8 +454,13 @@
     <div class="container">
         <div class="podcast">
             <div class="row">
+                <div class="hidden">
+                    <div class="col-md-6">
+                        <img src="./assets/logo/Frame.png" alt="" class="rectangle py-4">
+                    </div>
+                </div>
                 <div class="col-md-6">
-                    <img src="./assets/new/Frame.png" alt="" class="rectangle">
+                    <img src="./assets/logo/Frame.png" alt="" class="rectangle shown">
                 </div>
                 <div class="col-md-6">
                 
@@ -447,7 +469,7 @@
                         <div class="col-md-10">
                             <div class="podcast_content mt-5">
                                 <div class="podcast_write_up">
-                                    <h3 class="mb-5">Podcast</h3>
+                                    <h3 class="mb-5 shown">Podcast</h3>
                                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
                                         cupiditate adipisci praesentium aliquid atque, saepe quam quo rerum ea ducimus
                                         ullam, quibusdam at quos hic minima consequatur molestiae. Dolores, odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati non odit odio sit reiciendis magnam praesentium tempora deleniti corporis.</p>
@@ -469,6 +491,9 @@
     <div class="container">
         <div class="sales">
             <div class="row">
+                <div class="col-md-6 hidden">
+                    <img src="./assets/logo/Group2.png" alt="" class="rectangle">
+                </div>
                 <div class="col-md-6">
 
                     <div class="row">
@@ -476,7 +501,7 @@
                         <div class="col-md-10">
                             <div class="sales_content mt-5">
                                 <div class="sales_write_up">
-                                    <h3 class="mb-5">Sales Enablement</h3>
+                                    <h3 class="mb-5 shown">Sales Enablement</h3>
                                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
                                         cupiditate adipisci praesentium aliquid atque, saepe quam quo rerum ea ducimus
                                         ullam, quibusdam at quos hic minima consequatur molestiae. Dolores, odio. Lorem
@@ -489,7 +514,7 @@
                         <div class="col-md-1"></div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 shown">
                     <img src="./assets/logo/Group2.png" alt="" class="rectangle">
                 </div>
             </div>
@@ -570,30 +595,34 @@
     <div class="get_quote_section">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-7">
                     <div class="get_quote_content py-4">
-                    <h2 class="text-center">Interested?</h2>
-                    <p class="text-center">Just drop your contact info and we will get back <br> to you as soon as possible.</p>
-            </div>
+                        <h2 >WE ARE LOOKING <br> FORWARD TO COLLABORATE!</h2>
+                            <div class="circle1"></div>
+                            <div class="circle2"></div>
+                            <img src="./assets/images/image10.png" alt="">
+                    </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <form action="">
                         <label for="name" class="sr-only">Your Name</label>
-                        <input type="text" class="form-control form-control-lg quote_name" name="name" id="name" placeholder="Your Name"
-                            title="Enter your name">
+                        <input type="text" class="form-control form-control-lg quote_name" name="name" id="name" placeholder="Your Name" title="Enter your name" style="margin-top: 10px;">
                         <label for="email" class="sr-only">Your Emal</label>
                         <input type="email" class="form-control form-control-lg quote_email" name="email" id="email_2"
-                            placeholder="Your Email" title="Enter your email address">
+                            placeholder="Your Email" title="Enter your email address" style="margin-top: 10px;">
                         <label for="country" class="sr-only">Select your country</label>
                         <div class="input-group flex-nowrap">
-                            <select name="country" id="country" class=" ">
-                                <option value="+234" selected>+234</option>
-                                <option value="+1">+1</option>
-                            </select>
-                            <input type="tel" class="form-control form-control-lg quote_phone" placeholder="90909090900" name="phone_number"
-                                id="phone_number" />
+                            <div class="select" style="margin-top: 10px;">
+                                <div class="selectBtn" data-type="Germany" country-code="+49"><i class="flag flag-germany"></i> +49</div>
+                                <div class="selectDropdown">
+                                    <div class="option" data-type="Germany" country-code="+49"><i class="flag flag-germany"></i> +49</div>
+                                    <div class="option" data-type="Switzerland" country-code="+41"><i class="flag flag-switzerland"></i>+41
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="tel" class="form-control form-control-lg quote_phone" placeholder="999 9999999" name="phone_number" id="phone_number" style="margin-top: 10px;" />
                         </div>
-                        <button class="btn btn-block my-4 " id="quote_btn" type="submit">Get a Quote!</button>
+                        <button class="btn btn-block my-4 " id="quote_btn" type="submit">Send</button>
                     
                     </form>
                 </div>
@@ -882,6 +911,7 @@
     <script src="./js/all.min.js"></script>
     <script src="./js/mdb.min.js"></script>
     <script src="./js/navbarcollapse.js"></script>
+    <script src="./js/custom-picker.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
             // let skewedOne = document.querySelector('.skewedOne');
