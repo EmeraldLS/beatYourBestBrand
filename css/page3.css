@@ -192,9 +192,6 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     width: 100%;
     background-color: var(--bb-blue);
     position: relative;
-    /* Clip path half circle */
-    clip-path: circle(120vh at 50% -40vh);
-    /* Clip path full circle */
 
 }
 
