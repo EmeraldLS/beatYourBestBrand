@@ -180,15 +180,68 @@
 
 
     <!-- latest podcasts -->
-    <div class="container my-5 latest_podcast" >
+    <div class="container" >
         <div class="podcast_shown">
             <div class="podcast_header">
-                <h2>Our Latest Podcast</h2>
+                <h2>Our Latest Podcasts</h2>
                 <div class="prev_next_btns">
                     <a href="#"><i class="fas fa-arrow-left"></i></a>
                     <a href="#"><i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
+            <div class="content">
+<div class="cards_2">
+    <div class="card">
+        <img src="./assets/images/img7.png" alt="" class="img-fluid">
+        <div class="card_footer px-3">
+            <div class="post_date d-flex justify-content-left mt-3">
+                <small>5 June 2022</small>
+            </div>
+            <div class="post_content text-left">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <button class="btn read_more btn-block">Go Watch <span><i class="fas fa-arrow-right"></i></span> </button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./assets/images/img4.png" alt="" class="img-fluid">
+        <div class="card_footer px-3">
+            <div class="post_date d-flex justify-content-left mt-3">
+                <small>5 June 2022</small>
+            </div>
+            <div class="post_content text-left">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <button class="btn read_more btn-block">Go Watch <span><i class="fas fa-arrow-right"></i></span> </button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./assets/images/img6.png" alt="metaverse" class="img-fluid">
+        <div class="card_footer px-3">
+            <div class="post_date d-flex justify-content-left mt-3">
+                <small>5 June 2022</small>
+            </div>
+            <div class="post_content text-left">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <button class="btn read_more btn-block">Go Watch <span><i class="fas fa-arrow-right"></i></span> </button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./assets/images/img6.png" alt="metaverse" class="img-fluid">
+        <div class="card_footer px-3">
+            <div class="post_date d-flex justify-content-left mt-3">
+                <small>5 June 2022</small>
+            </div>
+            <div class="post_content text-left">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <button class="btn read_more btn-block">Go Watch <span><i class="fas fa-arrow-right"></i></span> </button>
+        </div>
+    </div>
+</div>
+            </div>
+            
         </div>
     </div>
 
@@ -282,7 +335,7 @@
     </div>
 
     
-<div class="container my-5">
+<div class="container ">
     <!-- News Letter -->
     <div class="news_letter_section">
         <div class="row">
@@ -479,13 +532,41 @@
 
                             <div class="col-md-1"></div>
                             <div class="col-md-10">
-                                <div class="form-content">
-                                    <div class="form-group">
-                                        <label for="name" class="sr-only">Your Name</label>
-                                        <input type="text" class="form-control form-control-lg quote_name" name="name" id="name" placeholder="Your Name"
-                                            title="Enter your name" style="margin-top: 10px;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="name" class="sr-only">Your Name</label>
+                                            <input type="text" class="form-control form-control-lg quote_name" name="name" id="name" placeholder="Your Name"
+                                                title="Enter your name" style="margin-top: 10px;">
+                                        </div>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="email" class="sr-only">Your Email</label>
+                                            <input type="email" class="form-control form-control-lg quote_email" name="email" id="email_3" placeholder="Your Email"
+                                                title="Enter your email" style="margin-top: 10px;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="country" class="sr-only">Select your country</label>
+                                            <div class="select">
+                                                <div class="selectBtn" data-type="Germany" country-code="+49"><i class="flag flag-germany"></i> +49</div>
+                                                <div class="selectDropdown">
+                                                    <div class="option" data-type="Germany" country-code="+49"><i class="flag flag-germany"></i> +49</div>
+                                                    <div class="option" data-type="Switzerland" country-code="+41"><i class="flag flag-switzerland"></i>+41
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <input type="tel" class="form-control form-control-lg quote_phone" placeholder="999 9999999" name="phone_number"
+                                                id="phone_number" style="margin-top: 10px;" />
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="form-content"> -->
+                                    
+                                    <!-- <div class="form-group">
                                         <label for="email" class="sr-only">Your Emal</label>
                                         <input type="email" class="form-control form-control-lg quote_email" name="email" placeholder="Your Email"
                                             title="Enter your email address" style="margin-top: 10px;">
@@ -503,8 +584,8 @@
                                         <input type="tel" class="form-control form-control-lg quote_phone" placeholder="999 9999999" name="phone_number"
                                             id="phone_number" style="margin-top: 10px;" />
                                     
-                                </div>
-                            </div>
+                                </div> -->
+                            <!-- </div> -->
                                 <button class="btn btn-block my-4 " id="quote_btn" type="submit">Get a quote!</button>
                             </div>
                             <div class="col-md-1"></div>
@@ -523,8 +604,6 @@
                                         <div class="links">
                                             <a href="#" style="color:#2b2b2b"><i class="fab fa-linkedin-in"></i></a>
                                             <a href="#" style="color:#ff5491"><i class="fas fa-envelope"></i></a>
-                                            
-                                    
                                         </div>
                                     </div>
                                 </div>
@@ -532,7 +611,7 @@
                                     <div class="direction_content">
                                         <img src="./assets/images/img1.jpg" alt="Director Image">
                                         <h4>James Doe</h4>
-                                        <p class="text-center">Sales Manager at Beat for Your Brand</p>
+                                        <p class="text-center">CEO</p>
                                         <div class="links">
                                             <a href="#" style="color:#2b2b2b"><i class="fab fa-linkedin-in"></i></a>
                                             <a href="#" style="color:#ff5491"><i class="fas fa-envelope"></i></a>
@@ -545,7 +624,7 @@
                                     <div class="direction_content">
                                         <img src="./assets/images/img1.jpg" alt="Director Image">
                                         <h4>James Doe</h4>
-                                        <p class="text-center">Sales Manager at Beat for Your Brand</p>
+                                        <p class="text-center">CBDO</p>
                                         <div class="links">
                                             <a href="#" style="color:#2b2b2b"><i class="fab fa-linkedin-in"></i></a>
                                             <a href="#" style="color:#ff5491"><i class="fas fa-envelope"></i></a>
@@ -555,7 +634,30 @@
                                     </div>
                                 </div>
                             </div>
-                            
+                            <!-- directors md screen -->
+                            <div class="container">
+                                <div class="direction_md_content">
+                                    <div>
+                                        <h4>James Doe</h4>
+                                        <p class="text-left">Sales Manager at Beat for Your Brand</p>
+                                
+                                    </div>
+                                    <div>
+                                        <h4>James Doe</h4>
+                                        <p class="text-left">CEO</p>
+                                    </div>
+                                    <div >
+                                        <h4>James Doe</h4>
+                                            <div style="display: flex;justify-content: space-between;">
+                                                <p class="text-left">CBDO</p>
+                                                <div class="links">
+                                                    <a href="#" style="color:#2b2b2b"><i class="fab fa-linkedin-in"></i></a>
+                                                    <a href="#" style="color:#ff5491"><i class="fas fa-envelope"></i></a>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-2"></div>
                     </div>
@@ -657,6 +759,7 @@
                         </div>
                         <input type="tel" class="form-control form-control-lg collaborate_phone" placeholder="999 9999999" name="phone_number"
                             id="phone_number" style="margin-top: 10px;" />
+                            <textarea name="collaborate_message" style="margin-top: 10px;" id="collaborate_message" cols="30" rows="4" class="form-control"></textarea>
                         <button class="btn btn-block my-4 " id="collaborate_btn" type="submit">Send</button>
                     
                     </form>

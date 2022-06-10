@@ -146,7 +146,6 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     background-repeat: no-repeat;
     position: relative;
     color: var(--bb-white);
-    box-shadow: inset -10px -10px 10px var(--bb-black);
 }
 
 .hero_content {
@@ -643,4 +642,254 @@ a:not(.sidenav-link):not(.btn):not(.dropdown-item):not(.nav-link):not(.navbar-br
 
 .footer-md_screen {
     display: none;
+}
+
+.mycalendar_section
+{
+    margin-top: 10px;
+    height: auto;
+    width: 100%;
+    padding: 30px 20px;
+    color: var(--bb-white);
+    background-color: var(--bb-light-black);
+    border-radius: 10px;
+    position: relative;
+}
+
+.mycalendar_header
+{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.mycalendar_header span{
+    color: var(--bb-pink);
+    margin-right: 5px;
+}
+.mycalendar_header a{
+    color: var(--bb-white) !important;
+    font-size: 15px;
+    background-color: var(--bb-lighter-black);
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+.mycalendar
+{
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: var(--bb-lighter-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+        
+}
+
+.line1{
+    height: 30px;
+    opacity: 0.5;
+    z-index: 0;
+    width: 60%;
+    background-color: var(--bb-white);
+    border-radius: 5px;
+    position: absolute;
+    top:170px;
+    right: 7.5%;
+}
+.line2{
+    height: 30px;
+    opacity: 0.5;
+    z-index: 0;
+    width: 85%;
+    background-color: var(--bb-white);
+    border-radius: 5px;
+    position: absolute;
+    top:205px;
+    right: 7.5%;
+}
+
+.line3{
+    height: 30px;
+    opacity: 0.5;
+    z-index: 0;
+    width: 60%;
+    background-color: var(--bb-white);
+    border-radius: 5px;
+    position: absolute;
+    top:240px;
+    left: 7.5%;
+}
+
+
+.mycalendar div{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    position: relative;
+}
+
+
+
+
+.mycalendar div small{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-size: 11px;
+    z-index: 2;
+}
+
+@media (max-width:1199px) {
+    .mycalendar div small{
+        font-size: 8px;
+        height: 20px;
+        width: 20px;
+    }
+    .line1{
+        width: 65%;
+        right: 4.9%;
+        top: 161px;
+    }
+    .line2{
+        height: 20px;
+        width: 80%;
+        right: 4.9%;
+        top: 196px;
+    }
+    .line3{
+        width: 65%;
+        left: 4.9%;
+        top: 222px;
+    }
+
+    
+}
+
+.colored{
+    background-color: #ff5491;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    margin: 0;
+    margin-top: 1px;
+    margin-right: -1px;
+}
+
+@media (max-width:991px) {
+    .mycalendar_section{
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    .mycalendar_section{
+        display: block;
+    }
+    .mycalendar div{
+        justify-content: center;
+        align-items: center;
+    }
+    .mycalendar div small{
+        /* height: 30px;
+        width: 30px; */
+    }
+    .line1, .line2, .line3{
+        display: none;
+    }
+    
+}
+
+@media (max-width:479px) {
+    .line1,
+    .line2,
+    .line3 {
+        display: block;
+        height: 20px;
+    }
+    .line1{
+        top: 163px;
+        width: 41%;
+        right: 20%;
+    }
+    .line2{
+        top: 193px;
+        width: 59%;
+        right: 20%;
+    }
+    .line3{
+        top: 222px;
+        width: 41%;
+        left: 20%;
+    }
+}
+
+@media (max-width:431px) {
+
+    .line1{
+        top: 163px;
+        width: 46%;
+        right: 16%;
+    }
+    .line2{
+        top: 193px;
+        width: 67%;
+        right: 16%;
+    }
+    .line3{
+        top: 222px;
+        width: 45%;
+        left: 17%;
+    }
+}
+
+@media (max-width:400px) {
+    .line1{
+        top: 163px;
+        width: 50%;
+        right: 12%;
+    }
+    .line2{
+        top: 193px;
+        width: 75%;
+        right: 12%;
+    }
+    .line3{
+        top: 222px;
+        width: 50%;
+        left: 12%;
+    }
+    
+}
+
+@media (max-width:375px) {
+    .line1{
+        top: 163px;
+        width: 55%;
+        right: 10%;
+    }
+    .line2{
+        top: 193px;
+        width: 85%;
+        right: 10%;
+    }
+    .line3{
+        top: 222px;
+        width: 55%;
+        left: 10%;
+    }
+    
+}
+
+@media (max-width:360px) {
+    .line2{
+        width: 80%;
+    }
 }

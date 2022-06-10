@@ -343,15 +343,25 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 .notshown{
     display: none;
 }
-.podcast_shown{
+.podcast_shown .content{
     display: block;
     position: relative;
     top: -270px;
+    height: 60vh;
 }
 
-@media (max-width:991px) {
-    .podcast_shown{
+@media (max-width:767px) {
+    .podcast_shown .content{
+        display: none;
+    }
+}
+
+@media (max-width:991.98px) {
+    .podcast_shown .content{ 
         top: -200px;
+    }
+    .podcast_header {
+       top: -200px !important;
     }
 }
 
@@ -382,6 +392,61 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     display: flex;
     color: var(--bb-white);
     justify-content: space-between;
+    position: relative;
+    top: -300px;
+}
+
+.podcast_header h2{
+    font-family: var(--lora);
+}
+
+@media (max-width:375px) {
+    .podcast_shown .content{
+        top: -150px;
+    }
+    .podcast_header h2{
+        text-align: center !important;
+        font-size: 30px;
+    }
+    .podcast_header{
+        justify-content: center;
+    }
+    .prev_next_btns a {
+        display: none;
+    }
+    .sponsors_logo{
+        padding-bottom: 50px;
+
+    }
+    .sponsors{
+        clip-path: ellipse(180vh 50vh at 50% 30%);
+        margin-bottom: 80px;
+    }
+    .cards_2{
+        top: 100px;
+    }
+    
+}
+
+.cards_2{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    /* right: -8%; */
+    overflow: hidden;
+}
+
+@media (max-width:991.98px) {
+    .cards_2{
+        margin-top: 0;
+        display: none;
+    }
+    .podcast_notshown{
+        display: flex;
+    }
+
+    
 }
 
 .podcast_notshown{
@@ -396,6 +461,9 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     flex-wrap: nowrap;
     flex-direction: column;
     gap: 10px;
+    position: relative;
+    overflow: hidden;
+    top: -150px;
 }
 
 .hidden{
@@ -510,6 +578,9 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     background-size: 300%;
     padding: 20px 50px;
     border-radius: 15px;
+    position: relative;
+    top: -100px;
+    bottom: 0;
 }
 
 
@@ -648,13 +719,16 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 }
 
 
-
-.collaborate_name, .collaborate_email, .collaborate_phone{
+#collaborate_message{
+    display: none;
+}
+.collaborate_name, .collaborate_email, .collaborate_phone, #collaborate_message{
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     border: none;
     outline: none;
     transition: all 0.25 ease;
+    color: var(--bb-white);
 }
 
 .collaborate_phone{
@@ -663,14 +737,21 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     border-bottom-left-radius: none !important;
 }
 
-.collaborate_name::placeholder,
-.collaborate_email::placeholder,
-.collaborate_phone::placeholder
-{
-    color: var(--bb-white);
+@media (max-width:479px) {
+    #collaborate_message{
+        display: block;
+    }
 }
 
-.collaborate_name:active,.collaborate_name:focus, .collaborate_email:active, .collaborate_email:focus, .collaborate_phone:active, .collaborate_phone:focus{
+.collaborate_name::placeholder,
+.collaborate_email::placeholder,
+.collaborate_phone::placeholder,
+#collaborate_message::placeholder
+{
+    color: var(--bb-white) !important;
+}
+
+.collaborate_name:active,.collaborate_name:focus, #collaborate_message:focus, #collaborate_message:active, .collaborate_email:active, .collaborate_email:focus, .collaborate_phone:active, .collaborate_phone:focus{
     background: var(--bb-pink);
 }
 
@@ -946,12 +1027,23 @@ footer #formHide {
 
 .video_play_section, .podcast_section, .sales_section
 {
-    height: 110vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     clip-path: ellipse(200vh 80vh at 50% 20%);
+}
+
+@media (max-width:992px) {
+    .video_play_section,
+        .podcast_section,
+        .sales_section{
+            /* height: 100vh !important;
+            clip-path: ellipse(150vh 40vh at 50% 30%); */
+            
+
+        }
 }
 
 .video_play_section{
@@ -1151,7 +1243,7 @@ footer #formHide {
 .quote_name, .quote_email, .quote_phone{
     box-shadow: none;
     background-color: rgba(255,255,255,0.3);
-    width: 302px;
+    width: 100%;
     color: var(--bb-white) !important;
     border: none;
 }
@@ -1203,6 +1295,12 @@ footer #formHide {
     align-items: center;
     flex-direction: column;
 }
+
+.direction_md_content{
+    display: none;
+}
+
+
 .direction_content img{
     height: 150px;
     width: 150px;
@@ -1231,6 +1329,24 @@ footer #formHide {
 @media (max-width:767.98px) {
     .direction_content{
         display: none;
+    }
+    .direction_md_content{
+        display: block;
+    }
+    .interested-content{
+        height: 80vh;
+    }
+}
+
+@media (max-width:479px) {
+    .podcast_integration{
+        display: none;
+    }
+    .collaborate_content h2{
+        text-align: center;
+    }
+    .collaborate_section{
+        border-radius: 20px !important;
     }
 }
 

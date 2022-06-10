@@ -252,7 +252,6 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     position: relative;
     color: var(--bb-white);
     width: auto;
-    box-shadow: inset -10px -10px 20px var(--bb-black);
 }
 
 .hero_content {
