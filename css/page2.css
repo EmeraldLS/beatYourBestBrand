@@ -615,15 +615,17 @@ footer #formHide {
     background-color: rgba(255, 255, 255, 0.3);
     transition: all 0.25 ease;
     color: var(--bb-white) !important;
-    border-radius: 10px !important;
+    /* border-radius: 10px !important; */
 }
 
-#phone_number{
+
+
+/* #phone_number{
     border-top-left-radius: 0 !important;
     border-left: none !important;
     outline: none !important;
     border-bottom-left-radius: 0 !important;
-}
+} */
 
 .form-control::placeholder{
     color: var(--bb-white);
@@ -649,13 +651,9 @@ footer #formHide {
     }
 }
 
-.input-group select{
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
+ /* select{
+    border-top-left-radius: 10px;
+} */
 
 @media (max-width:575.98px) {
     footer {
