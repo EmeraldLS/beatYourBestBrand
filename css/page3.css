@@ -191,22 +191,22 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 }
 
 .sponsors{
-    padding: 20px auto;
-    position: relative;
+    padding-top: 50px;
     height: 100%;
-    margin-bottom: 50px;
+    padding-bottom: 150px;
     width: 100%;
     background-color: var(--bb-blue);
     clip-path: ellipse(140vh 40vh at 50% 10%);
 }
 
 .sponsors_logo{
-    height: 30vh;
+
     display: flex;
     flex-wrap: wrap;
     gap: 55px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .latest_podcast{
@@ -227,8 +227,6 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 }
 
 
-
-
 @media (max-width:991px) {
 
 
@@ -236,11 +234,6 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
         border-radius: 0;
     }
     
-    .sponsors_logo {
-        height: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
 
     .social_icons {
         margin-top: 10px;
@@ -284,6 +277,7 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     .services_card{
         padding: 30px 50px !important;
         border-radius: 25px !important;
+        color: var(--bb-white) !important;
     }
 }
 
@@ -341,6 +335,40 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 .notshown{
     display: none;
 }
+.podcast_shown{
+    display: block;
+    position: relative;
+    top: -150px;
+}
+
+.prev_next_btns {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.prev_next_btns a {
+    background-color: var(--bb-blue);
+    color: var(--bb-white);
+    padding: 10px 20px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+    color: var(--bb-white) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.podcast_header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    color: var(--bb-white);
+    justify-content: space-between;
+}
 
 .podcast_notshown{
     position: relative;
@@ -351,6 +379,7 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
     flex-direction: column;
     gap: 10px;
 }
@@ -381,9 +410,6 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     .shown{
         display: none;
     }
-    .owl-carousel{
-        display: none !important;
-    }
     
 }
 
@@ -391,7 +417,7 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 .card
 {
     height: auto ;
-    width: 300px;
+    width: 100%;
     margin: 0;
     background: var(--bb-lighter-black);
     border-radius: 10px;
@@ -1085,6 +1111,21 @@ footer #formHide {
 .form-content{
     position: relative;
 }
+
+@media (max-width: 991.98px) {
+    .form-content{
+        flex-direction: column;
+        width: 100% !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .quote_email{
+        width: auto;
+    }
+    .form-group{
+        width: auto;
+    }
+    }
 
 
 .input-group{
