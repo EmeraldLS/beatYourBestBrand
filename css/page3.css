@@ -192,11 +192,12 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 
 .sponsors{
     padding-top: 50px;
+    min-height: 60vh;
     height: 100%;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
     width: 100%;
     background-color: var(--bb-blue);
-    clip-path: ellipse(140vh 40vh at 50% 10%);
+    clip-path: ellipse(180vh 30vh at 50% 30%);
 }
 
 .sponsors_logo{
@@ -207,6 +208,13 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+}
+
+@media (max-width:991px) {
+    .sponsors_logo{
+        gap: 70px;
+        justify-content: space-around;
+    }
 }
 
 .latest_podcast{
@@ -338,7 +346,13 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 .podcast_shown{
     display: block;
     position: relative;
-    top: -150px;
+    top: -270px;
+}
+
+@media (max-width:991px) {
+    .podcast_shown{
+        top: -200px;
+    }
 }
 
 .prev_next_btns {
@@ -350,7 +364,7 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 .prev_next_btns a {
     background-color: var(--bb-blue);
     color: var(--bb-white);
-    padding: 10px 20px;
+    border: 1px solid var(--bb-white);
     border-radius: 50%;
     height: 40px;
     width: 40px;
