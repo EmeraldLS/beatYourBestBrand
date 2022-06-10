@@ -892,4 +892,7 @@ a:not(.sidenav-link):not(.btn):not(.dropdown-item):not(.nav-link):not(.navbar-br
     .line2{
         width: 80%;
     }
+    .line1{
+        top: 162px;
+    }
 }
