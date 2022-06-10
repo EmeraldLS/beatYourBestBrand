@@ -346,7 +346,7 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
 .podcast_shown .content{
     display: block;
     position: relative;
-    top: -270px;
+    top: -250px;
     height: 60vh;
 }
 
@@ -362,6 +362,15 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     }
     .podcast_header {
        top: -200px !important;
+    }
+}
+
+@media (max-width:420px) {
+    .podcast_header{
+        top: -140px !important;
+    }
+    .podcast_shown .content {
+        top: -180px !important;
     }
 }
 
@@ -393,7 +402,7 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     color: var(--bb-white);
     justify-content: space-between;
     position: relative;
-    top: -300px;
+    top: -250px;
 }
 
 .podcast_header h2{
@@ -444,6 +453,8 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     }
     .podcast_notshown{
         display: flex;
+        position: relative;
+        top: 50px;
     }
 
     
@@ -581,6 +592,12 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     position: relative;
     top: -100px;
     bottom: 0;
+}
+
+@media (max-width:420px) {
+    .news_letter_section{
+        top: -50px !important;
+    }
 }
 
 
@@ -885,6 +902,12 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
     flex-wrap: nowrap;
     padding: 20px;
     border-radius: 10px;
+}
+
+.services_md_screen h1{
+    font-family: var(--lora);
+    color: var(--bb-white);
+    text-align: center;
 }
 
 .services_card{
@@ -1303,8 +1326,11 @@ footer #formHide {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     flex-direction: column;
 }
+
+
 
 .direction_md_content{
     display: none;
